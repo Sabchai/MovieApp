@@ -1,0 +1,146 @@
+/* Base body styling */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fef5f5; /* Light background color */
+  color: #3b2d2a; /* Dark maroon text color */
+  user-select: none;
+}
+
+/* Code styling */
+code {
+  font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* NFT container styling */
+.nft {
+  user-select: none;
+  max-width: 350px;
+  margin: 3rem auto;
+  border: 1px solid #572a24; /* Light maroon border */
+  background-color: #830404;
+  background: linear-gradient(135deg, #fef5f5 0%, #fdd7d7 100%); /* Maroon to salmon gradient */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Horizontal line styling */
+.nft hr {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #c1a4a0;
+  margin: 1rem auto; /* Centered */
+}
+
+/* Token image styling */
+.nft .main .tokenImage {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: 250px; /* Adjusted for better proportions */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Centered */
+}
+
+/* Description styling */
+.nft .main .description {
+  margin: 1rem 1rem;
+  color: #6a4c4a; /* Maroon description text */
+  
+  text-align: center; /* Centered */
+}
+
+/* Token info container styling */
+.nft .main .tokenInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centered */
+  margin-top: 1rem;
+}
+
+/* Price styling */
+.nft .main .tokenInfo .price {
+  display: flex;
+  align-items: center;
+  color: #ff6f61; /* Salmon color */
+  font-weight: 700;
+  font-size: 1.2rem; /* Adjusted for better readability */
+}
+
+/* Duration styling */
+.nft .main .tokenInfo .duration {
+  color: #8c6e6e; /* Light maroon color */
+  margin-top: 0.5rem;
+}
+
+/* Creator styling */
+.nft .main .creator {
+  display: flex;
+  justify-content: center; /* Centered */
+  margin-top: 1rem;
+}
+
+/* Creator wrapper styling */
+.nft .main .creator .wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c1a4a0; /* Light maroon border */
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #c77904;
+}
+
+/* Creator image styling */
+.nft .main .creator .wrapper img {
+  border-radius: 50%;
+  border: 2px solid #c26107;
+  width: 2.5rem; /* Slightly larger for better visibility */
+  height: 2.5rem; /* Consistent with width */
+  object-fit: cover;
+}
+
+/* Background styling */
+.nft::before {
+  position: fixed;
+  content: "";
+  box-shadow: 0 0 80px rgba(177, 152, 152, 0.1);
+  top: -10%;
+  left: -10%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: top 0.5s ease, left 0.5s ease, opacity 0.5s ease;
+}
+
+/* Hover effects for NFT container */
+.nft:hover {
+  border: 1px solid #9e350c; /* Slightly darker maroon border on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+
+/* Hover effects for background */
+.nft:hover::before {
+  opacity: 0.2;
+  top: -20%;
+  left: -20%;
+}
+
+/* Background styling for page title */
+.bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Centered text */
+}
+
+.bg h1 {
+  font-size: 10rem;
+  color: #b8ac10; /* Soft salmon color for the title */
+  margin: 0;
+}
